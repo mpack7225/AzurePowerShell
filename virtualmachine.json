@@ -56,7 +56,7 @@
         "securityRules": {
             "rule_1": {
                 "name": "Rule-Name-01",
-                "ipAddress": "[concat(parameters('ruleIp01'),'/32']",
+                "ipAddress": "[concat(parameters('ruleIp01'),'/32')]",
                 "priority": 1000
             }
         }
