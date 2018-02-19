@@ -62,6 +62,7 @@ $deploymentparms = @{
     vmSize = $vmSize
     ipPrefix = $ipPrefix
     ruleIp01 = $ipRule01
+    adminName = $adminUserName
 }
 
 $resourceDeploy = New-AzureRmResourceGroupDeployment  @deploymentparms

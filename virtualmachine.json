@@ -33,6 +33,10 @@
         "ruleIp01": {
             "type": "string",
             "defaultValue": "0.0.0.0"
+        },
+        "adminName": {
+            "type": "string",
+            "defaultValue": "userdave"
         }
     },
     "variables": {
@@ -51,7 +55,7 @@
         "ipConfigName": "ipconfig1",
         "dataDiskSizeGb": 1028,
         "computerName": "[concat(parameters('projectName'),'VM',parameters('projectNumber'))]",
-        "adminUserName": "pladmin",
+        "adminUserName": "[parameters('adminname')]",
         "subnetReference": "[concat('/subscriptions/',parameters('subscriptionId'),'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Network/virtualNetworks/',variables('virtualNetworks_name'),'/subnets/',variables('subnet_01_name'))]",
         "securityRules": {
             "rule_1": {
