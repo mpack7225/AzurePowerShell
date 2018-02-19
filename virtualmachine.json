@@ -29,6 +29,10 @@
         "ipPrefix": {
             "type": "string",
             "defaultValue": "10.0.0.0"
+        },
+        "ruleIp01": {
+            "type": "string",
+            "defaultValue": "0.0.0.0"
         }
     },
     "variables": {
@@ -52,28 +56,8 @@
         "securityRules": {
             "rule_1": {
                 "name": "Rule-Name-01",
-                "ipAddress": "<ADD IP HERE>/32",
+                "ipAddress": "[concat(parameters('ruleIp01'),'/32']",
                 "priority": 1000
-            },
-            "rule_2": {
-                "name": "Rule-Name-02",
-                "ipAddress": "<ADD IP HERE>/32",
-                "priority": 1010
-            },
-            "rule_3": {
-                    "name": "Rule-Name-03",
-                    "ipAddress": "<ADD IP HERE>/32",
-                    "priority": 1020
-            },
-            "rule_4": {
-                    "name": "Rule-Name-04",
-                    "ipAddress": "<ADD IP HERE>/32",
-                    "priority": 1030
-            },
-            "rule_5": {
-                    "name": "Rule-Name-05",
-                    "ipAddress": "<ADD IP HERE>/32",
-                    "priority": 1040
             }
         }
     },
