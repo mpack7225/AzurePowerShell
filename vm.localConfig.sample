@@ -1,0 +1,11 @@
+﻿$projectName = "MYVM"
+$projectNumber = "01"
+$storageAccountPrefix = "plstorageusmyvm"
+$location = "eastus"
+$vmAdminPassword = '<PASSWORD HERE>'
+$country = "US"
+$vmSize = "Standard_DS2"
+$subscriptionId = "mysubscriptionid"
+$templatefilelocation = ".\virtualmachine.json"
+$ipPrefix = "192.168.5.0"
+$ipRule01 = "<IP ADDRESS HERE>"
