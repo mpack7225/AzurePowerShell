@@ -206,66 +206,6 @@
                             "sourceAddressPrefixes": [],
                             "destinationAddressPrefixes": []
                         }
-                    },
-                    {
-                        "name": "[variables('securityRules').rule_2.name]",
-                        "properties": {
-                            "protocol": "Tcp",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "[variables('securityRules').rule_2.ipAddress]",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": "[variables('securityRules').rule_2.priority]",
-                            "direction": "Inbound",
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "[variables('securityRules').rule_3.name]",
-                        "properties": {
-                            "protocol": "Tcp",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "[variables('securityRules').rule_3.ipAddress]",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": "[variables('securityRules').rule_3.priority]",
-                            "direction": "Inbound",
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "[variables('securityRules').rule_4.name]",
-                        "properties": {
-                            "protocol": "Tcp",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "[variables('securityRules').rule_4.ipAddress]",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": "[variables('securityRules').rule_4.priority]",
-                            "direction": "Inbound",
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "[variables('securityRules').rule_5.name]",
-                        "properties": {
-                            "protocol": "Tcp",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "[variables('securityRules').rule_5.ipAddress]",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": "[variables('securityRules').rule_5.priority]",
-                            "direction": "Inbound",
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
                     }
                 ],
                 "defaultSecurityRules": [
